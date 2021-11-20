@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background: rgb(5,83,122);
+    font-family: Arial;
+    font-size: 10pt;
+    width: 100%;
+}
+
+.content {   
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(252, 252, 252);
+    width: 230px;
+    border-radius: 5px;
+    color: black;  
+    box-shadow: 3px 3px 3px rgb(39, 39, 39, 0.5);
+    margin: 100px auto;
+    padding: 10px;
+}
+
+#title{
+    margin: 10px;
+    width: 210px;
+    text-align: center;
+}
+#title #title-text{
+    font-size: 15px;
+    font-weight: bold;
+}
+#p-text{
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+}
+.input{
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 210px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.input:hover{
+    border: 1px solid rgb(79, 147, 248);
+    box-shadow: 0.5px 0.5px 3px rgb(79, 147, 248, 0.5);
+}
+.help-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 210px;
+    margin-top: 5px;
+}
+.help-content .pointer-help{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(43, 41, 41);
+}
+.help-content .pointer-help .help{
+    font-size: 14pt;
+    margin-right: 3px;
+}
+.help-content .pointer-help p{
+    font-size: 9pt;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+#btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 210px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+#btn:hover{
+    background: rgb(231, 231, 231);
+}
+
+.modal-help{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modal-help-guia{
+    display: flex;  
+    flex-direction: column;
+    background-color:rgb(252, 252, 252);
+    width: 230px;
+    height: 340px;
+    border-radius: 5px;
+    color: black;  
+    box-shadow: 3px 3px 3px rgb(39, 39, 39, 0.5);  
+    margin: 100px auto;
+    padding: 10px;
+}
+.close-modal-help{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.close-modal-help .close-help{
+    font-size: 14pt;
+}
+.content-modal-help{
+    flex: 1;
+    margin-top: 15px;
+}
+.title-modal{
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.text-modal{
+    font-size: 10pt;
+    margin-bottom: 8px;
+}
+
+.modal-res{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.modal-content-res{
+    display: flex;  
+    flex-wrap: wrap;
+    background-color:rgb(252, 252, 252);
+    width: 230px;
+    border-radius: 5px;
+    color: black;  
+    box-shadow: 3px 3px 3px rgb(39, 39, 39, 0.5);
+    font-size: 12pt;
+    margin: 100px auto;
+    padding: 10px;
+}
+.res-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 210px;
+}
+
+.close-modal-res{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 210px;
+    height: 19px;
+    cursor: pointer;
+}
+.close-modal-res .close-res{
+    font-size: 14pt;
+}
+
+.visible {
+    display: flex;
+}
+.close {
+    display: none;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 8pt;
+    color: rgb(102, 102, 102);
+}
